@@ -1,0 +1,16 @@
+version: "2"
+services:
+  mysql:
+    container_name: vc_mysql
+    restart: always
+    image: mysql:latest
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "nccutest" # TODO: Change this
+      MYSQL_USER: "test" # add a user
+      MYSQL_PASS: "nccutest"
+    volumes: # set volumes path
+      - my-datavolume:/var/lib/mysql
+volumes:
+  my-datavolume:
