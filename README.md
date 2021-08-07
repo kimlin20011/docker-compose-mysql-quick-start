@@ -1,9 +1,9 @@
 # Docker Mysql Compose quick start
 
 ## docker mysql 設定 / docker mysql install
-* 下載mysql image
+* 下載mysql image / pull the mysql image
 `docker pull mysql`
-* 檢查下載結果
+* 檢查下載結果/ check the pull result 
 `docker images`
 
 * bulild compose 
@@ -12,6 +12,7 @@
 
 # 進入容器/ enter the container
 `mysql -h 127.0.0.1 -u root -p`
+
 `mysql -h 127.0.0.1 -u test -p`
 
 * 查看目前user/ print all user
